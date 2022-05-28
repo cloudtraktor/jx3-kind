@@ -9,8 +9,8 @@ spec:
     chartRepository: https://github.com/jenkins-x-bdd/repo.git
     clusterName: kind
     devEnvApprovers:
-    - todo
-    environmentGitOwner: todo
+    - adanlessossi
+    environmentGitOwner: adanlessossi
     gitKind: github
     gitName: github
     gitServer: https://github.com
