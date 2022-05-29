@@ -25,8 +25,8 @@ jxRequirements:
     chartRepository: https://github.com/jenkins-x-bdd/repo.git
     clusterName: kind
     devEnvApprovers:
-    - todo
-    environmentGitOwner: todo
+    - adanlessossi
+    environmentGitOwner: adanlessossi
     gitKind: github
     gitName: github
     gitServer: https://github.com
@@ -34,9 +34,11 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: cloudtraktor
+    repository: jx3-kind
   - key: staging
   ingress:
-    domain: change.me
+    domain: 192.168.1.202.nip.io
     ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: .tekton-pipelines.
@@ -44,6 +46,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: adanlessossi
   repository: bucketrepo
   secretStorage: local
   vault: {}
